@@ -1,0 +1,56 @@
+.burger-div nav li :hover {
+  letter-spacing: 0.2em;
+  transition: 1.5s;
+  transform-style: unset;
+}
+@media (min-width: 300px) {
+  .burger-div {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .burger-div {
+    display: block;
+  }
+  .burger-ul li {
+    list-style-type: none;
+    font-size: 13px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway";
+    margin-top: 30px;
+  }
+  .burger-div nav {
+    position: absolute;
+    transition: 1s;
+    margin-left: -800px;
+    color: #4ba87d;
+    font-weight: bolder;
+  }
+  button {
+    cursor: pointer;
+    font-size: 30px;
+  }
+  nav.show {
+    margin-left: -30px;
+    position: absolute;
+  }
+}
+@media (min-width: 1400px) {
+  .burger-ul li {
+    font-size: 21px;
+    gap: 30px;
+    margin-top: 47px;
+  }
+}
+@media (min-width: 1520px) {
+  .burger-ul {
+    list-style-type: none;
+    font-size: 28px;
+  }
+  .burger-ul li {
+    font-size: 28px;
+    margin-top: 65px;
+  }
+}
