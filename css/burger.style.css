@@ -20,6 +20,7 @@
     flex-direction: column;
     font-family: "raleway";
     margin-top: 30px;
+    width: max-content;
   }
   .burger-div nav {
     position: absolute;
@@ -45,12 +46,9 @@
   }
 }
 @media (min-width: 1520px) {
-  .burger-ul {
-    list-style-type: none;
-    font-size: 28px;
-  }
   .burger-ul li {
-    font-size: 28px;
+    list-style-type: none;
+    font-size: 20px;
     margin-top: 65px;
   }
 }
