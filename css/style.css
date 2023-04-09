@@ -16,6 +16,9 @@ html {
     font-size: 22px;
     line-height: 26px;
   }
+  .ninjamail-img {
+    margin-left: -22px;
+  }
   .header-flex {
     margin: 12px;
   }
@@ -338,6 +341,9 @@ html {
   .section3-info2 {
     width: 273px;
   }
+  .ninjamail-img {
+    margin-left: 22px;
+  }
 }
 @media (min-width: 1400px) {
   body {
@@ -541,7 +547,6 @@ main {
 .ninjamail-img {
   width: 84px;
   height: 42px;
-  margin-left: -22px;
 }
 .navigation-flex {
   display: flex;
