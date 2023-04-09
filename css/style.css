@@ -1,8 +1,8 @@
 body {
   width: 100vw;
   overflow-x: hidden;
-  background: url(/assets/img/background.png),
-    url(/assets/img/green-background.png) center no-repeat;
+  background: url(../assets/img/background.png),
+    url(../assets/img/green-background.png) center no-repeat;
 }
 html {
   font-size: 62.5%;
@@ -531,6 +531,9 @@ main {
 .ninjamail {
   display: flex;
   justify-content: flex-start;
+}
+.burger-div {
+  position: absolute;
 }
 #burgerBtn {
   margin-left: -30px;
