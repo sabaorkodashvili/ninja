@@ -1,7 +1,9 @@
 .burger-div nav li :hover {
   letter-spacing: 0.2em;
-  transition: 1.5s;
   transform-style: unset;
+}
+.burger-div nav li a {
+  transition: 0.3s;
 }
 @media (min-width: 300px) {
   .burger-div {

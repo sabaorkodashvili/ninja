@@ -91,10 +91,19 @@ html {
   .section3-info1,
   .section3-info2 {
     width: 209px;
+    transition: 0.3s;
   }
   .section3-info2 {
     margin-top: 30px;
     margin-right: 10px;
+  }
+  .section3-info1:active,
+  .section3-info1:hover {
+    transform: translateY(+20px);
+  }
+  .section3-info2:active,
+  .section3-info2:hover {
+    transform: translateY(-20px);
   }
   .sec3-info2-learnmore p {
     font-size: 12px;
@@ -266,6 +275,11 @@ html {
     .member {
       height: 239px;
       width: 341px;
+      transition: 0.3s;
+    }
+    .member:active,
+    .member:hover {
+      transform: translateY(+20px);
     }
     .section5 h1 {
       font-size: 29px;
@@ -368,6 +382,7 @@ html {
     font-weight: 800;
     font-size: 17px;
     line-height: 20px;
+    transition: 0.3s;
   }
   .section-1info h1 {
     height: 142px;
@@ -607,6 +622,9 @@ main {
   display: flex;
   gap: 14px;
 }
+.green-btn a {
+  transition: 0.3s;
+}
 .green-btn {
   color: white;
   background-color: #4ba87d;
@@ -614,6 +632,7 @@ main {
   justify-content: center;
   align-items: center;
   font-weight: 900;
+  transition: 0.3s;
 }
 .white-btn {
   display: flex;
@@ -623,6 +642,7 @@ main {
   background-color: white;
   color: #4ba87d;
   font-weight: 900;
+  transition: 0.3s;
 }
 .section2-img {
   position: relative;
@@ -654,6 +674,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.learn-span a {
+  transition: 0.3s;
 }
 .sec3-learn-more {
   background-color: #fff;
@@ -776,7 +799,10 @@ section5 {
   color: white;
   background-color: #4ba87d;
 }
-.footer-ninjamail {
+.section7-flex :nth-child(2) a {
+  transition: 0.3s;
+}
+.footer-logo {
   margin-top: 30px;
   margin-left: -30px;
   display: flex;
@@ -798,6 +824,7 @@ section5 {
 }
 .footer-nav-ul {
   list-style: none;
+  transition: 0.5s;
 }
 .copyright {
   border-top: 1px solid #dbdbdb;
@@ -821,10 +848,12 @@ section5 {
 footer {
   font-family: "raleway";
 }
+.navigation-ul a {
+  transition: 0.3s;
+}
 .navigation-ul :hover {
   background-color: #4ba87d;
   color: white;
-  transition: 2s;
   letter-spacing: 0.3em;
   cursor: pointer;
   display: flex;
@@ -837,20 +866,18 @@ footer {
 }
 .sign-up :hover {
   letter-spacing: 0.3em;
-  transition: 2s;
 }
 .green-btn :hover {
   letter-spacing: 0.2em;
   background-color: #fff;
   color: #4ba87d;
-  transition: 2s;
   padding: 8px 5px;
 }
 .section-ul :nth-child(1) :hover {
   letter-spacing: 0.2em;
   background-color: #fff;
   color: #4ba87d;
-  transition: 2s;
+  transition: 0.3s;
   padding: 8px 5px;
   font-weight: bolder;
   border: 3px solid #4ba87d;
@@ -859,13 +886,12 @@ footer {
   letter-spacing: 0.2em;
   background-color: #4ba87d;
   color: #fff;
-  transition: 2s;
+  transition: 0.3s;
   padding: 8px 5px;
   font-weight: bolder;
 }
 .learn-span :hover {
   letter-spacing: 0.2em;
-  transition: 1s;
   width: 100%;
   height: 100%;
   display: flex;
@@ -875,12 +901,9 @@ footer {
 }
 .section7-flex :nth-child(2) :hover {
   letter-spacing: 0.2em;
-  transition: 2s;
-  font-size: larger;
   color: #000;
 }
 .footer-nav-ul :hover {
   letter-spacing: 0.1em;
-  transition: 0.5s;
   color: blue;
 }
