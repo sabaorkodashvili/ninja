@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/3-pg.css" />
+  </head>
+  <body>
+    <div class="mainDiv" >
+
+        <form class="signup-form">
+            <h2>Sign Up</h2>
+            <a href="index.html" id="close">❌</a>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="username-input" name="name" required />
+            </div>
+            <label for="password">Password:</label>
+            <input type="password" id="password-input" name="password" required />
+        </div>
+        <button type="submit" id="signBtn">Sign Up</button>
+    </form>
+    
+</div>
+
+    <div class="w-100 h-100" id="account-view" hidden >
+        <a  id="mainButton" href="./index.html">❌</a>
+        <div class="container w-75 bg-white bg-gradient shadow-lg text-center rounded mx-auto position-relative"
+            style="top: 20%;">
+            <div class="position-relative top-0 start-50 translate-middle overflow-hidden">
+
+            </div>
+
+
+            <div class="position-relative w-50 mx-auto" style="top: -75px">
+                <h1 id="username-display" style="color: #5e72e4">sa</h1>
+                <p id="user-bio-display">sa</p>
+                <p>Current balance: <span class="text-success" id="user-balance-display"></span>USD</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./3-pg.js" ></script>
+  </body>
+</html>
