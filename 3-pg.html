@@ -4,46 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ninja Mail</title>
     <link rel="stylesheet" href="/css/3-pg.css" />
+    <link
+      rel="shortcut icon"
+      type="x-icon"
+      href="./assets/img/ninja-icon.png"
+      ;
+    />
   </head>
   <body>
-    <div class="mainDiv" >
+    <div class="mainDiv">
+      <form class="signup-form">
+        <h2>Sign Up</h2>
 
-        <form class="signup-form">
-            <h2>Sign Up</h2>
-            <a href="index.html" id="close">❌</a>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="username-input" name="name" required />
-            </div>
-            <label for="password">Password:</label>
-            <input type="password" id="password-input" name="password" required />
+        <a href="index.html" id="close">❌</a>
+        <div class="form-group">
+          <label for="name">Name: <span id="invalid"></span></label>
+          <input type="text" id="username-input" name="name" />
+          <span id="nameError"></span>
         </div>
+        <label for="password">Password: </label>
+        <input type="password" id="password-input" name="password" />
+        <span id="passwordError"></span>
         <button type="submit" id="signBtn">Sign Up</button>
-    </form>
-    
-</div>
-
-    <div class="w-100 h-100" id="account-view" hidden >
-        <a  id="mainButton" href="./index.html">❌</a>
-        <div class="container w-75 bg-white bg-gradient shadow-lg text-center rounded mx-auto position-relative"
-            style="top: 20%;">
-            <div class="position-relative top-0 start-50 translate-middle overflow-hidden">
-
-            </div>
-
-
-            <div class="position-relative w-50 mx-auto" style="top: -75px">
-                <h1 id="username-display" style="color: #5e72e4">sa</h1>
-                <p id="user-bio-display">sa</p>
-                <p>Current balance: <span class="text-success" id="user-balance-display"></span>USD</p>
-            </div>
-
-        </div>
-
+      </form>
     </div>
 
-    <script src="./3-pg.js" ></script>
+    <div class="profile" hidden>
+      <a id="closeBtn" href="./3-pg.html">❌</a>
+      <div class="profile-picture">
+        <!-- <img src="profile-picture.jpg" alt="Profile Picture" /> -->
+      </div>
+      <div class="profile-details">
+        <div class="user-info">
+
+          <h1 class="userBio"></h1>
+          <p class="userInfo">Frontend Developer</p>
+        </div>
+        <ul>
+          <li><strong>Email:</strong> <span class="email"></span></li>
+          <li><strong>Location:</strong> <span class="location"></span></li>
+          <li> <strong>Balance:</strong> <span class="userBalance
+            "></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./jss/3-pg.js"></script>
   </body>
 </html>

@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  background: url(../assets/img/background.png), center;
+  margin: 0;
+}
+.card {
+  border: 1px solid #000;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  /* align-items: center; */
+}
+
+form input,
+textarea {
+  font-size: 30px;
+}
+
+#mainBtn {
+  font-size: 20px;
+  color: green;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.userinfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.memberdiv {
+  width: 370px;
+  height: 250px;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  margin: 10px;
+  margin-top: 25px;
+}
+
+.memberdiv h1 {
+  text-transform: uppercase;
+}
+.memberdiv p {
+  font-weight: 500;
+}
+
+.formdiv {
+  display: flex;
+  justify-content: center;
+}
+#form {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin: 30px;
+}

@@ -35,8 +35,9 @@ input[type="password"] {
   border-radius: 5px;
 }
 
-button[type="submit"] {
-  width: 455px;
+button[type="submit"],
+#loginBtn {
+  width: 412px;
   padding: 10px;
   background-color: #4caf50;
   color: #fff;
@@ -44,7 +45,7 @@ button[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 16px;
-  margin-left: 35.3%;
+  /* margin-left: 35.3%; */
 }
 
 button[type="submit"]:hover {
@@ -74,4 +75,92 @@ button[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#invalid {
+  color: red;
+  font-weight: 540;
+  margin-left: 60px;
+  font-size: 18px;
+}
+
+#passwordError,
+#nameError {
+  color: red;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-style: bold;
+}
+#username-input {
+  margin-top: 5px;
+}
+/*         ...          ..   */
+.profile {
+  background-color: aliceblue;
+  /* display: flex; */
+  /* display: none; */
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  width: 700px;
+  height: 200px;
+  margin-left: auto;
+  border: 1px solid #000;
+  margin-right: auto;
+}
+#closeBtn {
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: -150px;
+  font-size: 20px;
+  margin-right: 520px;
+  position: absolute;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-picture {
+  margin-right: 20px;
+}
+
+.profile-picture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.profile-details h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.profile-details p {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.profile-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  gap: 70px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.profile-details ul li {
+  margin-bottom: 5px;
+}
+
+.profile-details ul li strong {
+  font-weight: bold;
+}
+
+.profile-details ul li a {
+  text-decoration: none;
 }
