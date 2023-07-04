@@ -14,41 +14,37 @@
     <link rel="stylesheet" href="./css/second.style.css" />
   </head>
   <body>
-      <div id="modalContainer">
-        <div id="modalContent">
-          <h2>About product</h2>
-          <p>click search dog button to see the cutest dogs pictures...</p>
-          <button id="closeModal">go back to search</button>
-        </div>
+    <div id="modalContainer">
+      <div id="modalContent">
+        <h2>About product</h2>
+        <p>click search dog button to see the cutest dogs pictures...</p>
+        <button id="closeModal">go back to search</button>
       </div>
-      <header>
-        <div class="header">
-          <h1 id="info">Animal info</h1>
-          <a  id="mainBtn" href="./index.html"> Main page</a>
-        </div>
-      </header>
-      <!-- <div class="selectdiv">
-      <h1>search product :</h1>
-      <select name="select" id="select">
-        <option value="">price low to high</option>
-        <option value="">price low to high</option>
-        <option value="">oldest</option>
-      </select> -->
     </div>
-    <button id="searchbtn">search Dogs</button>
-    <div class="productsdiv"></div>
+    <header>
+      <div class="header">
+        <h1 id="info">about users</h1>
+        <a id="mainBtn" href="./index.html"> Main page</a>
+      </div>
+    </header>
+
     <main>
-      <div class="product-container">
-        <div class="product-image"></div>
-        <div class="product-details"></div>
+      <div class="w-25 mx-auto my-3 p-3 bg-dark shadow roudned text-white">
+        <label for="sort-by-select" class="form-label">Sort by</label>
+        <select class="form-select" id="sort-by-select">
+          <option value="1">price</option>
+          <option value="2">name</option>
+          <option value="3">category</option>
+        </select>
       </div>
-      <div class="dogimg">
-
-        <img id="dog-image" width="400" />
+      <button id="selectbtn">search products</button>
+      <div class="container">
+        <div id="products-wrapper" class="row row-cols-4 g-3"></div>
       </div>
-      <p id="timeTag" hidden></p>
     </main>
-
+    <footer>
+      <p id="timeTag" hidden></p>
+    </footer>
 
     <script src="./jss/secondPage.js" type="module"></script>
   </body>
