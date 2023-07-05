@@ -17,27 +17,31 @@
     <div id="modalContainer">
       <div id="modalContent">
         <h2>About product</h2>
-        <p>click search dog button to see the cutest dogs pictures...</p>
+        <p>click search any product for you...</p>
         <button id="closeModal">go back to search</button>
       </div>
     </div>
     <header>
       <div class="header">
-        <h1 id="info">about users</h1>
+        <h1 id="info">About product</h1>
         <a id="mainBtn" href="./index.html"> Main page</a>
       </div>
     </header>
 
     <main>
+      <h1>Search product</h1>
+      <input type="text" id="searchInput" placeholder="Enter search query" />
+      <button class="searchBtn">Search</button>
+      <p id="searchResults"></p>
+
       <div class="w-25 mx-auto my-3 p-3 bg-dark shadow roudned text-white">
         <label for="sort-by-select" class="form-label">Sort by</label>
         <select class="form-select" id="sort-by-select">
           <option value="1">price</option>
           <option value="2">name</option>
-          <option value="3">category</option>
         </select>
       </div>
-      <button id="selectbtn">search products</button>
+      <!-- <button id="selectbtn">search products</button> -->
       <div class="container">
         <div id="products-wrapper" class="row row-cols-4 g-3"></div>
       </div>
