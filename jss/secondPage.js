@@ -1,6 +1,5 @@
 "use strict";
-// // import generateProducts from "./jss/data";
-// // import phoneInf from "./jss/phonesL";
+
 const modal = document.querySelector("#info");
 const closeModalButton = document.getElementById("closeModal");
 const modalContainer = document.getElementById("modalContainer");
@@ -25,7 +24,6 @@ closeModalButton.addEventListener("click", () => {
 // const selectbtn = document.querySelector("#selectbtn");
 ////////////////////////////////////////////////////////////////
 
-const searchBtn = document.querySelector(".searchBtn");
 const productsAPIURL = "https://dummyjson.com/products";
 const productsWrapperDiv = document.querySelector("#products-wrapper");
 const sortSelect = document.querySelector("#sort-by-select");
@@ -82,24 +80,24 @@ const renderProducts = () => {
 
   for (let i = 0; i < products.length; i++) {
     let product = products[i];
-    // products.forEach((product) => {
-    // destucturing
+
     const { title, price, description } = product;
     const productDiv = document.createElement("div");
-    productDiv.className = "element";
-
-    productDiv.innerHTML = `
-        <div class="product">
-        <h1 class="title">${title}</h1>
-        
-        <p class="decription"> Info :${description}</p>
-        <h2 class="price"> <b>Price </b>:${price}$</h2>
-        </div>
-        `;
-    productsWrapperDiv.appendChild(productDiv);
-    // searchArray(products);
-
-    // });
+    let imgsUrl = product.images;
+    console.log(product.images);
+    ///
+    imgsUrl.forEach((url) => {
+      console.log(url);
+      productDiv.innerHTML = `
+      <div class="product">
+      <h1 class="title">${title}</h1>
+      <img class="img"  src="${url}" alt="product picture">
+      <p class="decription"> Info :${description}</p>
+      <h2 class="price"> <b>Price </b>:${price}$</h2>
+      </div>
+      `;
+      productsWrapperDiv.appendChild(productDiv);
+    });
   }
 };
 
@@ -108,41 +106,3 @@ const insertProducts = async () => {
   renderProducts();
 };
 insertProducts();
-////
-
-// function searchArray(products, input) {
-//   var input = document.getElementById("searchInput").value;
-//   var results = [];
-//   // searchCondition = document.getElementById("searchInput").value;
-//   // console.log(products);
-//   console.log(results);
-//   for (let i = 0; i < products.length; i++) {
-//     if (input === products[i]) {
-//       results.push(products[i]);
-//     }
-//   }
-//   return results;
-// }
-console.log(searchBtn);
-searchBtn.addEventListener("click", (e) => {
-  const value = e.target.value;
-  users.forEach((user) => {
-    const isvisible = user.title.includes(value);
-    element.element.classList.toggle("hide", !isvisible);
-  });
-});
-// searchBtn.onsubmit = insertProducts();
-// function searchArray() {
-//   console.log(input);
-//   var results = [];
-//   for (let i = 0; i < products.length; i++) {
-//     console.log(products[i]);
-//     let product = products[i];
-//     if (products[i].indexOf(input) !== -1) {
-//       results.push(products[i]);
-//     }
-//   }
-
-//   document.getElementById("searchResults").innerHTML = results.join(", ");
-// }
-////

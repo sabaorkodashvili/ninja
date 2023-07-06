@@ -164,8 +164,61 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 25px;
+  margin-top: 20px;
 }
 
 .img {
   width: 100px;
+}
+
+.searchdiv {
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: 600px;
+}
+#searchInput {
+  height: 29px;
+}
+
+.searchBtn {
+  /* display: flex; */
+  text-align: center;
+
+  align-items: center;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+input {
+  font-size: 1rem;
+}
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.card > .header {
+  margin-bottom: 0.25rem;
+}
+
+.card > .body {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.hide {
+  display: none;
 }

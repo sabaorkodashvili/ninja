@@ -60,8 +60,6 @@ for (let i = 0; i < persons.length; i++) {
   const img = document.createElement("img");
   img.setAttribute("src", member.avatar);
 
-  //////
-
   const clickBtn = document.createElement("button");
 
   clickBtn.textContent = "click to contact";
@@ -70,7 +68,6 @@ for (let i = 0; i < persons.length; i++) {
 
   const personMail = member.email;
 
-  //   email.textContent = "show less";
   const emailText = document.createElement("p");
   emailText.textContent = personMail;
   //

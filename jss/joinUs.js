@@ -2,21 +2,21 @@
 
 const members = [
   {
-    name: "nick",
+    name: "Mick",
     username: "jhonson",
     email: "Jhonatan2002@gmail.com",
     experience: "work as a social marketer since 2019",
   },
   {
-    name: "mike",
-    username: "skofild",
+    name: "Mike",
+    username: "Richardson",
     email: "Mike1980@gmail.com",
     experience: "work as a engineer since 2010",
   },
   {
-    name: "nate",
-    username: "diaz",
-    email: "Natediazchamo@gmail.com",
+    name: "Nate",
+    username: "walker",
+    email: "NateWalker@gmail.com",
     experience: "MMA fighter",
   },
 ];

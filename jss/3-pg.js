@@ -27,6 +27,9 @@ const users = [
     info: "fullstack developer",
   },
 ];
+const mysecretNumber = 7;
+window.localStorage.setItem("sn", mysecretNumber);
+console.log(window.localStorage);
 
 const loginViewElements = {
   usernameInput: document.querySelector("#username-input"),
@@ -59,21 +62,20 @@ function login(username, password) {
     ) {
       return user; // Successful login
     } else {
+      // window.location.href = "products.html";
       return false; // Invalid username or password
     }
   }
 }
-//
-// for (let i = 0; i < users.length; i++) {
-// const user = users[i];
+
 loginViewElements.form.addEventListener("submit", (e) => {
   e.preventDefault();
   let nameMessages = [];
   let passworMessage = [];
-
   const { usernameInput, passwordInput, form } = loginViewElements;
   const { userBio, email, location, userInfo, userBalance } =
     accountViewElement;
+
   // account info
 
   const passwordErrorElement = document.querySelector("#passwordError");
@@ -101,6 +103,12 @@ loginViewElements.form.addEventListener("submit", (e) => {
     passwordErrorElement.innerText = "";
   }
   if (login(usernameInput.value, passwordInput.value)) {
+    const username = usernameInput.value;
+    const password = passwordInput.value;
+    console.log(localStorage.setItem("password", password));
+    localStorage.setItem("username", user);
+    localStorage.setItem("password", password);
+
     hiddenDiv.hidden = false;
     hiddenDiv.style.display = "flex";
     form.hidden = true;
@@ -113,10 +121,12 @@ loginViewElements.form.addEventListener("submit", (e) => {
     userInfo.textContent = `${user.info}`;
     userBalance.textContent = ` ${user.balance} $`;
 
-    console.log(user);
+    // console.log(user);
     ///
   } else if (usernameInput.value > "" && passwordInput.value > "") {
     invalid.textContent = "invalid username or password";
   }
 });
 // }
+const storedUsername = window.localStorage.getItem("username");
+const storedPassword = window.localStorage.getItem("password");

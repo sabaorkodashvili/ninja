@@ -29,10 +29,26 @@
     </header>
 
     <main>
-      <h1>Search product</h1>
-      <input type="text" id="searchInput" placeholder="Enter search query" />
-      <button class="searchBtn">Search</button>
-      <p id="searchResults"></p>
+      <!-- <div class="search-wrapper">
+        <h1>Search product</h1>
+        <input
+          type="search"
+          id="search"
+          placeholder="Enter search query"
+          data-search
+        /> -->
+      <!-- <input type="text" id="searchInput" placeholder="Enter search query" /> -->
+      <!-- <button class="searchBtn">Search</button>
+        <p id="searchResults"></p>
+        <div class="opendiv"></div> -->
+      <!-- </div> -->
+      <div class="user-cards" data-user-cards-container></div>
+      <template data-user-template>
+        <div class="card">
+          <div class="header" data-header></div>
+          <div class="body" data-body></div>
+        </div>
+      </template>
 
       <div class="w-25 mx-auto my-3 p-3 bg-dark shadow roudned text-white">
         <label for="sort-by-select" class="form-label">Sort by</label>
